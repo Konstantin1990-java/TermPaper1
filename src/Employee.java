@@ -1,9 +1,10 @@
+
 public class Employee {
-    private String fullName; //ФИО сотрудника
+    private final String fullName; //ФИО сотрудника
     private int departmentNumber; //номер отдела
     private double salary; //зарплата
     private static int idCount = 0;
-    private int id; // счетчик
+    private final int id; // счетчик
 
     public Employee(String fullName, int departmentNumber, double salary) { //создаем конструктор для всех полей
         this.fullName = fullName;
@@ -41,6 +42,7 @@ public class Employee {
         this.salary = salary;
     }
 
+    @Override
     public String toString() {
         return "ID сотрудника - " + this.id + ", ФИО сотрудника - " + this.fullName + ", номер отдела - "
                 + this.departmentNumber + ", зарплата - " + this.salary + " рублей";
