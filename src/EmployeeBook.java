@@ -30,14 +30,13 @@ public class EmployeeBook {
 
     // b. Удалить сотрудника (находим сотрудника по Ф. И. О. и/или id, обнуляем его ячейку в массиве).
     public void removeEmployee(String fullName) {
-        for (int i = 0; i < employees.length; i++) {
+        for (int i = 0; i < size; i++) {
             if (employees[i].getFullName().equals(fullName)) {
                 System.out.println(employees[i].getFullName() + " удален");
                 System.arraycopy(employees, i + 1, employees, i, size - i - 1);
                 employees[size - 1] = null;
                 size--;
             }
-            return;
         }
     }
 

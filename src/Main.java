@@ -7,7 +7,7 @@ public class Main {
         Employee[] employee = employeeBook.getEmployees();
         // добавляем сотрудников
         System.out.println("добавляем сотрудников");
-        employeeBook.addEmployee("Иванов Иван Иванович");
+        employeeBook.addEmployee("Иванов Владимир Иванович");
         employeeBook.addEmployee("Иванов Сергей Иванович");
         employeeBook.addEmployee("Иванов Петр Иванович");
         employeeBook.addEmployee("Иванов Василий Иванович");
